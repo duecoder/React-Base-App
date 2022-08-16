@@ -8,11 +8,11 @@ module.exports = {
     'airbnb',
     'prettier',
     'plugin:react/jsx-runtime',
-    'plugin-testing-library/react',
-    'plugin:jest/all',
+    'plugin:testing-library/react',
+    // 'plugin:jest/all',
   ],
   overrides: [],
-  parser: '@babel/eslint-parser',
+  // parser: '@babel/eslint-parser',
   settings: {
     react: {
       version: 'detect',
@@ -39,5 +39,7 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'react/jsx-filename-extension': 0,
     'no-unused-vars': 'off',
+    'default-param-last': 0,
+    'no-console': 0,
   },
 };

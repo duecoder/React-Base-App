@@ -1,15 +1,11 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import {
-  primaryColor,
-  primaryDarkColor,
-  lighterColor,
-  iconColor,
-} from '../config/colors';
+import 'react-toastify/dist/ReactToastify.css';
+
+import * as colors from '../config/colors';
 
 export default createGlobalStyle`
   body {
-    background-color: ${primaryDarkColor};
-    /* color: ${primaryDarkColor}; */
+    background-color: ${colors.primaryDarkColor};
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   * {
@@ -25,7 +21,7 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
-    background: ${iconColor};
+    background: ${colors.iconColor};
     border: none;
     color: #fff;
     padding: 10px 20px;
@@ -35,20 +31,28 @@ export default createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: ${primaryColor};
+    color: ${colors.primaryColor};
   }
 
   ul {
     list-style: none;
   }
+  body .Toastify .Toastify__toast-container .Toastify__toast--success {
+    background: ${colors.successColor};
+    color: #fff;
+  }
+  body .Toastify .Toastify__toast-container .Toastify__toast--error {
+    background: ${colors.errorColor};
+    color: #fff;
+  }
 `;
 
 export const Container = styled.section`
   max-width: 50%;
-  background-color: ${lighterColor};
+  background-color: ${colors.lighterColor};
   margin: 30px auto;
   padding: 30px;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(226, 220, 200, 0.1);
 `;

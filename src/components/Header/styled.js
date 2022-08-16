@@ -3,7 +3,7 @@ import { iconColor } from '../../config/colors';
 
 export const Nav = styled.nav`
   background-color: ${iconColor};
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(226, 220, 200, 0.1);
   padding: 15px;
   display: flex;
   align-items: center;
