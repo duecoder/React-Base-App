@@ -25,9 +25,9 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
-    background: ${primaryColor};
+    background: ${iconColor};
     border: none;
-    color: $fff;
+    color: #fff;
     padding: 10px 20px;
     border-radius: 3px;
     font-weight: 700;
@@ -44,7 +44,7 @@ export default createGlobalStyle`
 `;
 
 export const Container = styled.section`
-  max-width: 360px;
+  max-width: 50%;
   background-color: ${lighterColor};
   margin: 30px auto;
   padding: 30px;

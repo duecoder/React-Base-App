@@ -6,10 +6,7 @@ import { Container } from '../../styles/GlobalStyles';
 export default function Login() {
   return (
     <Container>
-      <Title>
-        Login
-        <small>Hello World</small>
-      </Title>
+      <Title>Login</Title>
       <Paragrafo>Lorem</Paragrafo>
       <button type="button">Send</button>
     </Container>
